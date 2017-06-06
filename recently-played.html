@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Chivo:300,400" rel="stylesheet">
+<style>
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+#section {
+    text-align:left;
+    padding-left:10px;
+    font-size:15px;
+    font-family: 'Chivo', sans-serif;
+    font-weight:300;     
+}
+#spinitron-nowplaying .labelpart {
+  font-style: italic;
+  font-size:13px;
+  pointer-events: none;
+}
+#spinitron-nowplaying .songpart,
+#spinitron-nowplaying .diskpart,
+#spinitron-nowplaying .artistpart,
+#spinitron-nowplaying .djpart {
+  pointer-events: none;
+}
+#spinitron-nowplaying .playlistpart a {
+  text-decoration: underline;
+  color: rgb(0,154,255);
+  pointer-events: auto;
+}
+#spinitron-nowplaying .datepart {
+  display: none;
+}
+
+</style>
+</head>
+
+<body>
+<div id="section">
+<div class="widget-box">
+    <div data-station="wmcn" data-num="10" data-time="0" data-nolinks="0" id="spinitron-nowplaying"></div>
+    <script src="//spinitron.com/js/npwidget.js"></script>
+</div>
+</body>
+</html>
