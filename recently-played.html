@@ -3,12 +3,15 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Chivo:300,400" rel="stylesheet">
 <style>
+/*Default widget makes links an all-or-nothing deal (set data-nolinks="0" to turn them on). 
+Since we want only some links enabled, we use targeted CSS to disable excess links. Remove visible styling and force the cursor not to change for hyperlinks*/
 a:link,
 a:visited {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
+/*This is just regular styling*/
 #section {
     text-align:left;
     padding-left:10px;
@@ -16,6 +19,7 @@ a:visited {
     font-family: 'Chivo', sans-serif;
     font-weight:300;     
 }
+/*Style each widget class appropriatly*/
 #spinitron-nowplaying .labelpart {
   font-style: italic;
   font-size:13px;
@@ -27,18 +31,19 @@ a:visited {
 #spinitron-nowplaying .djpart {
   pointer-events: none;
 }
+/*Restore the playlist to link styling*/
 #spinitron-nowplaying .playlistpart a {
   text-decoration: underline;
   color: rgb(0,154,255);
   pointer-events: auto;
 }
+/*Hide the date*/
 #spinitron-nowplaying .datepart {
   display: none;
 }
-
 </style>
 </head>
-
+<!-- Widget explained in detail here https://spinitron.bitbucket.io/widget.html -->
 <body>
 <div id="section">
 <div class="widget-box">
