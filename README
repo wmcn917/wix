@@ -6,6 +6,7 @@ View the schedule with CSS enabled here: http://spinitron.com/radio/playlist.php
 Presumably custom styling also works for playlist view??? but I have only tested it with the schedule ...
 
 Demo CSS was found here: https://bitbucket.org/spinitron/spinitron.bitbucket.org/raw/130b30392284671d5038074efb0bba49c9134934/styles.css
+Spinitron's full annotated stylesheet is availible here: http://spinitron.com/css1/style-public.css
 Then further customized by using the browser Web inspector to identify element names.
 Some elements that are more involved to customize use images for the background
 eg. the rounded top and bottom of the schedule hover pop-out: http://spinitron.com/img/bg-bot-s.png, http://spinitron.com/img/bg-bot.png, etc.
